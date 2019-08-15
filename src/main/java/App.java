@@ -26,5 +26,15 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "landlord-form.hbs");
         }, new HandlebarsTemplateEngine());
+
+        get("/landlord-success", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "landlord-success.hbs");
+        }, new HandlebarsTemplateEngine());
+
+        get("/tenant-success", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "tenant-success.hbs");
+        }, new HandlebarsTemplateEngine());
     }
 }
