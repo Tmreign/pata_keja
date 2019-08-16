@@ -1,7 +1,28 @@
 {{#partial "content"}}
 
-    <div class="container">
-
+    <div class="navbar">
+        <a href="/" class="link2">Pata Keja </a> <a href="tenant-form">Search </a> <a class="link1" href="landlord-form">Post </a>
+    </div>
+    <div class="container container1">
+        <h1 class="head2">Apartments Posted</h1>
+        <hr>
+        <div class="row">
+            <br>
+            {{#each landlord}}
+                <div class="card-deck">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="/images/apt3.jpg" class="card-img-top apartments" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ price }} p.m</h5>
+                                <p class="card-text">A large and spacious {{ room }} apartment with a big kitchen and living room.</p>
+                                <p class="card-text"><small class="text-muted">{{ location }}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
     </div>
     ​
 {{/partial}}

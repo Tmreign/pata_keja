@@ -1,35 +1,50 @@
 {{#partial "content"}}
+    <div class="whole1">
+        <div class="navbar">
+            <a href="/" class="link2">Pata Keja </a> <a href="tenant-form">Search </a> <a class="link1" href="landlord-form">Post </a>
+        </div>
+        <div class="container">
+            <h1 class="head1">Post An Apartment</h1>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="back_tenant">
+                        <h2 class="head5">Stop overpaying for leads to your property.</h2>
+                        <h1 class="head6">List your property on Pata Keja, the leading rental marketplace for multifamily buildings.</h1>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form action='/landlord-success' class="form1">
+                        <h2 class="form4">Advertise with us for quality, cost-effective leads.</h2>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Location</label>
+                            <input type="text" class="form-control" id="location" placeholder="Enter Location">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Rooms</label>
+                            <select class="form-control" id="rooms">
+                                <option>1 bed</option>
+                                <option>2 beds</option>
+                                <option>3 beds</option>
+                                <option>4 beds</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect2">Prices</label>
+                            <select class="form-control" id="prices">
+                                <option>10K - 15K</option>
+                                <option>15K - 20K</option>
+                                <option>20K - 25K</option>
+                                <option>25K - 30K</option>
+                                <option>35K - 40K</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary"> Submit</button>
+                    </form>
+                </div>
+            </div>
 
-    <div class="container">
-        <h1 class="head1">Post An Apartment</h1>
-        <br>
-        <form action='/landlord-success'>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Location</label>
-                <input type="text" class="form-control" id="location" placeholder="Enter Location">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Rooms</label>
-                <select class="form-control" id="rooms">
-                    <option>1 bed</option>
-                    <option>2 beds</option>
-                    <option>3 beds</option>
-                    <option>4 beds</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect2">Prices</label>
-                <select class="form-control" id="prices">
-                    <option>10K - 15K</option>
-                    <option>15K - 20K</option>
-                    <option>20K - 25K</option>
-                    <option>25K - 30K</option>
-                    <option>35K - 40K</option>
-                </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-
+        </div>
     </div>
     ​
 {{/partial}}

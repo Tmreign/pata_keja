@@ -1,13 +1,24 @@
 {{#partial "content"}}
-
+    <div class="whole">
+    <div class="navbar">
+        <a href="/" class="link2">Pata Keja </a> <a href="tenant-form">Search </a> <a class="link1" href="landlord-form">Post </a>
+    </div>
     <div class="container">
         <h1 class="head1">Search Apartments</h1>
         <br>
-        <form action='/tenant-success'>
+        <div class="row">
+            <div class="col-md-6">
+        <div class="back_tenant">
+            <h2 class="head5">Stop overpaying on rent.</h2>
+            <h1 class="head6">Search for property on Pata Keja, the leading rental marketplace for multifamily buildings.</h1>
+        </div>
+            </div>
+            <div class="col-md-6">
+        <form action='/tenant-success' class="form1">
+            <h2 class="form4">Search for quality, cost-effective rents.</h2>
             <div class="form-group">
                 <label for="exampleInputEmail1">Location</label>
                 <input type="text" class="form-control" id="location" placeholder="Enter Location">
-                <small id="location" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Rooms</label>
@@ -30,7 +41,10 @@
             </div>
             <button type="submit" class="btn btn-primary"> Submit</button>
         </form>
+            </div>
+        </div>
 
+    </div>
     </div>
     ​
 {{/partial}}
